@@ -32,6 +32,49 @@ let cards = []; // You will use this array in step 6
 
 // Continue the code here 👇🏻
 
+
+
+class Card {
+
+constructor(number, color, image) {
+this.number = number
+this.color = color
+
+}
+image = () => {return `./images/${this.color}_${this.number}.png`}
+}
+
+
+const green = new Card(1, "Green",)
+const yellow = new Card(2, "Yellow")
+const blue = new Card(3, "Blue")
+const red = new Card(4, "Red")
+
+console.log(green);
+console.log(yellow);
+console.log(blue);
+console.log(red);
+// cards.push(green, blue, yellow, red)
+
+const colors = ["Yellow", "Green", "Blue", "Red"]
+
+colors.forEach((color) => { for (let i = 0; i < 10; i++){ 
+  const card = new Card(i, color)
+  cards.push(card, card)
+
+}
+})
+
+
+ 
+
+
+
+
+
+
+
+
 /**
  *
  * Don't touch this code
